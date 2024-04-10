@@ -1,9 +1,11 @@
-import Logo from './ui/Sidebar/Logo';
-import SidebarMenu from './ui/Sidebar/SidebarMenu';
+import Logo from "./Logo";
+import SidebarMenu from "./SidebarMenu";
+
+const borderBox = "border-[1px] border-gray-100" 
 
 function Sidebar() {
   return (
-    <div>
+    <div className={`${borderBox} w-60 text-center flex flex-col font-semibold items-center pt-8`}>
       <Logo />
       <SidebarMenu />
     </div>
